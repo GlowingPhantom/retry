@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111; /* Fundal întunecat */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: red; /* Culoare roșie pentru titlu */
+  margin-top: 75px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 3 coloane pentru imagini */
+  gap: 20px;  /* Distanță între imagini */
+  width: 80%;  /* Dimensiune maximă pentru container */
+  max-width: 1000px;  /* Lățime maximă */
+  margin: auto;
+  padding: 20px;
+}
+
+.gallery-item {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-color: #222;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Imaginile se vor adapta fără a se distorsiona */
+  border-radius: 10px;
+}
